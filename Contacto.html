@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/png" href="imagenes\icono.png" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/estilos.css" />
+        <script src="loader.js"></script>
+        <title>Contact</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="imagenes/icono.png" alt="Logo" />
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Inicio</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li class="menu-desplegable">
+                        <label for="menu-checkbox">Proyectos <i class="fa fa-caret-down"></i></label>
+                        <input type="checkbox" id="menu-checkbox" />
+                        <div class="opciones">
+                            <a href="Trabajos.html">Trabajos</a>
+                            <a href="Blog.html">Blog</a>
+                        </div>
+                    </li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Contact me to discover how I can assist you!</p>
+            <div id="container-form">
+                <form
+                    action="https://formspree.io/f/xzbqwqey"
+                    method="POST">
+                    <label for="nombre">Name:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Your name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                    <label for="mensaje">Message:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Leave your message here" required></textarea>
+                    <button class="submit-btn" type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+            <div class="social-icons-container">
+                <p>Unlock endless possibilities! Connect with me on social media too</p>
+                <ul class="social-icons">
+                    <li>
+                        <a  class="social-icon" href="https://www.instagram.com/alan0908_/" target="_blank">
+                            <img src="imagenes/instagram.svg" alt="Instagram icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="social-icon" href="https://twitter.com/Alan0908_" target="_blank">
+                            <img src="imagenes/twitter.svg" alt="Twitter icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="social-icon" href="https://github.com/Alan09080" target="_blank">
+                            <img src="imagenes/github.svg" alt="GitHub icon" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        <footer>
+            <p>Handcrafted by me &copy; 2023 </p>
+        </footer>
+    </body>
+    <div id="loader" class="loader"></div>
+</html>
