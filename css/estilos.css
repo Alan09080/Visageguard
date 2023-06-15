@@ -80,6 +80,32 @@ body {
     justify-content: center;
 }
 
+
+
+/*Estilos de separador*/
+.separador {
+    background-image: url('/imagenes/separador.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.separador img {
+    width: 50%;
+}
+
+.contenedor-imgleft {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+
+
 /*Estilos de header*/
 header {
     display: flex;
@@ -321,7 +347,7 @@ footer .icons a:hover {
 
 /*--------------------Estilos Contact-------------------*/
 
-#contact{
+#contact {
     margin-top: 2%;
     margin-left: 15%;
     margin-right: 15%;
@@ -331,7 +357,7 @@ footer .icons a:hover {
 }
 
 
-#contact h1{
+#contact h1 {
     text-align: center;
     align-items: center;
     margin-bottom: 3%;
