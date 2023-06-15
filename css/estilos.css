@@ -69,10 +69,10 @@ body {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
     overflow-x: auto;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #bdc3c7;
     background-size: cover;
-    color: #fff;
+    color: rgba(255, 255, 255, 0);
 }
 
 .contenedor-img {
@@ -111,14 +111,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(45deg, #bdc3c7, #bdc3c7);
+    background: linear-gradient(45deg, #bdc3c7, #a7a7a7);
     padding: 8px;
     border-bottom: #ffb500 5px solid;
-    width: auto;
+    width: 100%;
 }
 
 header img {
-    height: 40px;
+    height: 30px;
 }
 
 nav ul {
@@ -195,13 +195,14 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: #ffb700 5px solid;
     width: 100%;
     height: auto;
+    background-image: url('/imagenes/fondopuntos4.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     padding: 30px;
-    padding-top: 50px;
+    padding-top: 2vw;
 }
 
 #foto {
@@ -217,7 +218,7 @@ nav a:hover {
     content: "";
     position: absolute;
     inset: -10px 140px;
-    background: linear-gradient(315deg, #ffb700, #ffb500);
+    background: linear-gradient(315deg, rgb(255, 183, 0), #ffb500);
     transition: 0.5s;
     animation: animate 4s linear infinite;
 }
@@ -266,12 +267,14 @@ nav a:hover {
 }
 
 .informacion {
-    background-color: #6b6b6b57;
+    background-color: #6b6b6b2c;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
     text-align: center;
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    padding: 1%;
-    margin-top: 30px;
+    padding: 1.5%;
+    margin-top: 3vw;
     height: auto;
 }
 
@@ -285,7 +288,7 @@ nav a:hover {
     display: inline-block;
     color: #000000;
     margin-bottom: 2%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 /*Estilos main*/
@@ -298,8 +301,8 @@ nav a:hover {
 }
 
 .misvis p {
-    margin: 2%;
-    margin-bottom: 8%;
+    margin-top: 1%;
+    margin-bottom: 4%;
     width: auto;
     height: auto;
     color: black;
@@ -311,6 +314,35 @@ nav a:hover {
     width: auto;
     color: black;
 }
+
+
+/*--------------------Estilos Valores-------------------*/
+
+#valores{
+    width: 100%;
+    height: 18vh;
+}
+
+.contenedor_valores{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.contenedor_valor{
+    background-color: #ffb500;
+    color: black;
+    font-size: 1.4rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 /*--------------------Estilos Footer-------------------*/
 
@@ -474,6 +506,130 @@ textarea:focus {
     width: auto;
     height: 50px;
 }
+
+
+@media (max-width: 850px) {
+
+    #foto {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    #foto::before {
+        content: "";
+        position: absolute;
+        inset: -10px 70px;
+        background: linear-gradient(315deg, #ffb700, #ffb500);
+        transition: 0.5s;
+        animation: animate 4s linear infinite;
+    }
+    
+    #foto::after {
+        content: "";
+        position: absolute;
+        inset: 5px;
+        background: #e7e7e7;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    
+    .content {
+        position: absolute;
+        inset: 20px;
+        border: 6px solid #ffffff;
+        z-index: 3;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .informacion {
+        background-color: #6b6b6b57;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 3%;
+        margin-top: 3vw;
+        height: auto;
+        font-size: .7rem;
+    }
+    
+
+    .contenedor_valores{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+    
+    .contenedor_valor{
+        background-color: #ffb500;
+        color: black;
+        font-size: 0.8rem;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+.misvis {
+    max-width: 100%;
+    height: auto;
+    color: #ffffff;
+    margin: 2%;
+    font-size: 0.8rem;
+}
+
+.misvis p {
+    margin: 2%;
+    margin-bottom: 8%;
+    width: auto;
+    height: auto;
+    color: black;
+}
+
+.misvis h2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: auto;
+    color: black;
+}
+
+footer p {
+    font-size: 0.6rem;
+    line-height: 1.5;
+    color: #868686;
+    margin: 0;
+    padding: 0;
+}
+
+}
+
+
 
 /*
 
