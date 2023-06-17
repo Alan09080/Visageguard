@@ -293,6 +293,7 @@ nav a:hover {
 /*Estilos main*/
 
 .misvis {
+    display: flex;
     max-width: 100%;
     height: auto;
     color: #ffffff;
@@ -305,6 +306,7 @@ nav a:hover {
     width: auto;
     height: auto;
     color: black;
+    text-align: center;
 }
 
 .misvis h2 {
@@ -312,6 +314,14 @@ nav a:hover {
     border-bottom: 2px solid black;
     width: auto;
     color: black;
+}
+
+.mitad{
+    width: 50%;
+}
+
+#text {
+    margin: 1%;
 }
 
 
