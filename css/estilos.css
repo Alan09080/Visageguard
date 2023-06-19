@@ -722,9 +722,48 @@ footer p {
     padding: 0;
 }
 
+form{
+    width: 95%;
 }
 
+#contact{
+    margin: 0%;
+    width: 100%;
+}
 
+#servicios{
+    font-size: 0.7rem;
+}
+
+.container-image{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.container-image img{
+    width: 95%;
+}
+
+.container-info{
+    width: 95%;
+    margin: 1%;
+}
+
+.container-info ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    }
+
+
+
+    #contact{
+font-size: 0.7rem;
+    }
+}
 
 /*
 
@@ -827,9 +866,7 @@ footer p {
         padding: 0;
     }
 
-    form {
-        width: 100%;
-    }
+
 }
 
 @media (max-width: 500px) {
