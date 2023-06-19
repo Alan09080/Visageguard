@@ -1,3 +1,6 @@
+#info-product{
+    padding: 0;
+}
 /*Estilo de loader*/
 .loader {
     position: fixed;
@@ -347,6 +350,89 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/*--------------------Estilos Servicios-------------------*/
+#servicios{
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#servicios h1 {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3%;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: fit-content;
+    margin-inline: auto;
+    color: black;
+}
+
+ul,p #servicios  {
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 3%;
+    width: fit-content;
+    margin-inline: auto;
+    color: black;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.37);
+}
+
+#info-sistema{
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 3%;
+    width: fit-content;
+    margin-inline: auto;
+    color: black;
+}
+
+
+
+.container-info ul{
+display: flex;
+flex-direction: column;
+
+}
+
+.container-services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.container-service{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#precios{
+    margin-top: 3%;
+    width: 100%;
+}
+
+#precios ol{
+    display: flex;
+    width: 100%;
+    color: black;
+    height: fit-content;
+}
+
+#precios li{
+    margin: 1%;
+    width: 33.33%;
+    text-align: center;
+    list-style: none;
 }
 
 

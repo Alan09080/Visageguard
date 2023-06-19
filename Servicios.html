@@ -1,50 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <link rel="icon" type="image/png" href="imagenes/Logo.png" />
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/estilos.css" />
-        <script src="loader.js"></script>
-        <title>Skills</title>
-    </head>
+<head>
+    <link rel="icon" type="image/png" href="imagenes/Logo.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="loader.js"></script>
+    <title>Servicios</title>
+</head>
 
-    <body>
-        <header>
-            <img src="imagenes/icono.png" alt="Logo" />
-            <nav>
-                <ul>
-                    <li><a href="Home.html">Inicio</a></li>
-                    <li><a href="Servicios.html">Servicios</a></li>
-                    <li class="menu-desplegable">
-                        <label for="menu-checkbox">Proyectos <i class="fa fa-caret-down"></i></label>
-                        <input type="checkbox" id="menu-checkbox" />
-                        <div class="opciones">
-                            <a href="Trabajos.html">Trabajos</a>
-                            <a href="Blog.html">Blog</a>
-                        </div>
+<body>
+    <header>
+        <img src="imagenes/icono.png" alt="Logo" />
+        <nav>
+            <ul>
+                <li><a href="Home.html">Inicio</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="servicios">
+            <h1>Servicios</h1>
+            <p id="info-sistema">El sistema de acceso de VisageGuard utiliza la tecnología de reconocimiento facial para identificar y
+                autenticar a las personas que intentan ingresar a una instalación o sistema. El software de
+                reconocimiento facial se integra con las cámaras de seguridad para capturar una imagen de la cara del
+                usuario, que se compara con una base de datos de rostros autorizados. Si hay una coincidencia, el
+                sistema permite el acceso, de lo contrario, se deniega.</p>
+            <div class="container-services">
+                <div class="container-service">
+                    <div class="container-image">
+                        <img src="/imagenes/Producto.webp" alt="Embalaje">
+                    </div>
+                    <div class="container-info">
+                        <ul>
+                            <li>
+                                Manuales de usuario
+                            </li>
+                            <li>
+                                Expansión de almacenamiento para las cámaras
+                            </li>
+                            <li>
+                                Cartes de aviso de vigilancia
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="precios">
+                <ol>
+                    <li>
+                        Una capa
                     </li>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-
-
-        <div class="card">
-            <div class="front" style="background-image: url(/imagenes/tarjetas/html\ front.png);">
+                    <li>
+                        Dos capas
+                    </li>
+                    <li>
+                        Tres capas
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        $10,000
+                    </li>
+                    <li>
+                        $15,000
+                    </li>
+                    <li>
+                        $25,000
+                    </li>
+                </ol>
             </div>
-            <div class="back" style="background-image: url(/imagenes/tarjetas/html\ back.png);">
-                <p>Projects with HTML and CSS</p>
-                <a href="PracticesHTML.html" class="button">Go to!</a>
-            </div>
+    </main>
+    </section>
+    <footer>
+        <p>VisageGuard 2023 &copy; Todos los derechos reservados </p>
+    </footer>
+</body>
+<div id="loader" class="loader"></div>
 
-
-        <footer>
-            <p>VisageGuard 2023 &copy; Todos los derechos reservados </p>
-            <div class="icons">Icons by <a target="_blank" href="https://icons8.com">Icons8</a> and <a href="https://www.flaticon.com/free-icons/life-coach">Flaticon</a></div>
-        </footer>
-    </body>
-    <div id="loader" class="loader"></div>
 </html>
